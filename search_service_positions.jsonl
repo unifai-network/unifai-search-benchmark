@@ -1,0 +1,100 @@
+{"query": "latest news about Bitcoin", "expected_action": "SerpAPI--21--newsSearch", "position": 5}
+{"query": "search for finance information about Tesla stock", "expected_action": "SerpAPI--21--financeSearch", "position": 1}
+{"query": "invest in this defi opportunity", "expected_action": "OKXDeFi--28--subscribeInvestment", "position": 1}
+{"query": "check if a domain is available to register", "expected_action": "Domain--9--checkDomainAvailability", "position": 1}
+{"query": "estimate earnings for this defi investment", "expected_action": "OKXDeFi--28--estimateInvestmentSubscription", "position": 1}
+{"query": "show my wallet tokens and defi investments", "expected_action": "OKXDeFi--28--getTokenAndDefiAssets", "position": 1}
+{"query": "find hotels in Paris for next week", "expected_action": "SerpAPI--21--hotelSearch", "position": 1}
+{"query": "check safety of this token contract", "expected_action": "GoPlusSecurity--23--tokenSecurity", "position": 4}
+{"query": "find defi investment opportunities on Ethereum", "expected_action": "OKXDeFi--28--searchInvestments", "position": 1}
+{"query": "book a flight from New York to Los Angeles", "expected_action": "SerpAPI--21--flightSearch", "position": 1}
+{"query": "search the web for climate change information", "expected_action": "TavilyWebSearch--12--webSearch", "position": 1}
+{"query": "search for information about artificial intelligence", "expected_action": "SerpAPI--21--webSearch", "position": 3}
+{"query": "get details about this investment", "expected_action": "OKXDeFi--28--getInvestmentDetails", "position": 1}
+{"query": "find meteora liquidity pools", "expected_action": "Meteora--29--searchDlmmPools", "position": 2}
+{"query": "find pendle markets", "expected_action": "Pendle--79--retrievePendleMarketList", "position": 1}
+{"query": "find dynamic amm pools", "expected_action": "Meteora--29--searchDynamicAmmPools", "position": 1}
+{"query": "get information about pendle assets", "expected_action": "Pendle--79--getPendleAssetInfomation", "position": 1}
+{"query": "calculate withdrawal from my investment", "expected_action": "OKXDeFi--28--estimateInvestmentRedemption", "position": 5}
+{"query": "check high yield defi pools", "expected_action": "DefiLlama--8--getDefiPools", "position": 1}
+{"query": "get current exchange rates for USD", "expected_action": "Bruce's Lab--2--get_forex_rates", "position": 1}
+{"query": "get details about this dynamic amm pool", "expected_action": "Meteora--29--getDynamicAmmPool", "position": 1}
+{"query": "analyze token security from address", "expected_action": "Quillcheck--89--tokenAnalysisFromAddress", "position": 2}
+{"query": "search for mentions of Ethereum on Twitter", "expected_action": "Elfa--18--searchMentions", "position": 1}
+{"query": "check my solana wallet balance", "expected_action": "Sonic--43--getBalance", "position": 4}
+{"query": "get details about this dlmm pool", "expected_action": "Meteora--29--getDlmmPool", "position": 3}
+{"query": "withdraw from my defi investment", "expected_action": "OKXDeFi--28--redeemInvestment", "position": 2}
+{"query": "supply assets to compound", "expected_action": "CompoundV2--27--supply", "position": 1}
+{"query": "find my liquidity positions in meteora", "expected_action": "Meteora--29--getDynamicAmmPoolLpsByUser", "position": 9}
+{"query": "echo this message back to me", "expected_action": "Bruce's Lab--2--echo", "position": 1}
+{"query": "reclaim rent from my solana token accounts", "expected_action": "Solana-Rent-Reclaimer--85--reclaimSolRent", "position": 1}
+{"query": "add liquidity to dynamic amm pool", "expected_action": "Meteora--29--addDynamicAmmPoolLiquidity", "position": 1}
+{"query": "swap tokens on pendle", "expected_action": "Pendle--79--swap", "position": 1}
+{"query": "analyze this token's market performance", "expected_action": "TokenAnalysis--25--analyzeToken", "position": 1}
+{"query": "find my dlmm positions", "expected_action": "Meteora--29--getDlmmPoolPositionsByUser", "position": 1}
+{"query": "create a new dynamic amm pool", "expected_action": "Meteora--29--createDynamicAmmPool", "position": 1}
+{"query": "swap tokens on sui blockchain", "expected_action": "Cetus--22--swap", "position": 1}
+{"query": "create a liquidity pool on pancakeswap", "expected_action": "PancakeSwapV3--44--createPool", "position": 1}
+{"query": "create a custom dynamic amm pool", "expected_action": "Meteora--29--createCustomizableDynamicAmmPool", "position": 1}
+{"query": "transfer sol to another wallet", "expected_action": "Sonic--43--transfer", "position": 3}
+{"query": "get details about my liquidity position", "expected_action": "Meteora--29--getDlmmPoolPosition", "position": 2}
+{"query": "add liquidity to pendle", "expected_action": "Pendle--79--addLiquidity", "position": 1}
+{"query": "get recent posts from Truth Social", "expected_action": "Bruce's Lab--2--truth_posts", "position": 1}
+{"query": "check my solana token balance", "expected_action": "Solana--7--getBalance", "position": 1}
+{"query": "remove liquidity from pancakeswap", "expected_action": "PancakeSwapV3--44--removeLiquidity", "position": 1}
+{"query": "find trending crypto tokens", "expected_action": "Elfa--18--getTrendingTokens", "position": 1}
+{"query": "remove liquidity from pendle", "expected_action": "Pendle--79--removeLiquidity", "position": 2}
+{"query": "supply assets to venus protocol", "expected_action": "Venus--73--supply", "position": 1}
+{"query": "collect fees from my pancakeswap position", "expected_action": "PancakeSwapV3--44--collect", "position": 1}
+{"query": "add liquidity to dlmm pool", "expected_action": "Meteora--29--addDlmmPoolLiquidity", "position": 1}
+{"query": "lock liquidity in dynamic amm pool", "expected_action": "Meteora--29--lockDynamicAmmPoolLiquidity", "position": 1}
+{"query": "create a new dlmm pool", "expected_action": "Meteora--29--createDlmmPool", "position": 2}
+{"query": "create a new dlmm pool with custom settings", "expected_action": "Meteora--29--createCustomizableDlmmPool", "position": 1}
+{"query": "swap tokens on solana", "expected_action": "Jupiter--5--swap", "position": 4}
+{"query": "redeem tokens from venus protocol", "expected_action": "Venus--73--redeem", "position": 1}
+{"query": "remove liquidity from dynamic amm pool", "expected_action": "Meteora--29--removeDynamicAmmPoolLiquidity", "position": 1}
+{"query": "find token contract address by symbol", "expected_action": "DexScreener--4--getTokenAddressBySymbol", "position": 1}
+{"query": "swap tokens on ethereum", "expected_action": "1inch--15--swap", "position": null}
+{"query": "redeem tokens on pendle", "expected_action": "Pendle--79--redeem", "position": 5}
+{"query": "stake my pancakeswap lp tokens", "expected_action": "PancakeSwapV3--44--stake", "position": 1}
+{"query": "add liquidity to pancakeswap", "expected_action": "PancakeSwapV3--44--addLiquidity", "position": 1}
+{"query": "remove liquidity from dlmm pool", "expected_action": "Meteora--29--removeDlmmPoolLiquidity", "position": 1}
+{"query": "mint tokens on pendle", "expected_action": "Pendle--79--mint", "position": 5}
+{"query": "get latest web3 news", "expected_action": "Web3News--11--getWeb3News", "position": 1}
+{"query": "search for tweets about NFTs", "expected_action": "Twitter--68--searchTweets", "position": 1}
+{"query": "transfer tokens between chains", "expected_action": "OrbiterFinance--67--crossChainBridge", "position": 4}
+{"query": "withdraw tokens from venus protocol", "expected_action": "Venus--73--withdraw", "position": 1}
+{"query": "get token information from gmgn", "expected_action": "GMGNTrendTokenAnalysis--39--getgmgntokeninfo", "position": 1}
+{"query": "repay borrowed tokens on venus", "expected_action": "Venus--73--repayborrow", "position": 1}
+{"query": "borrow tokens from venus protocol", "expected_action": "Venus--73--borrow", "position": 1}
+{"query": "get domain whois information", "expected_action": "Domain--9--getDomainWhoisInfo", "position": 1}
+{"query": "borrow tokens from compound", "expected_action": "CompoundV2--27--borrow", "position": 1}
+{"query": "invest in venus protocol", "expected_action": "Venus--73--invest", "position": 1}
+{"query": "analyze token from ticker symbol", "expected_action": "Quillcheck--89--tokenAnalysisFromTicker", "position": 1}
+{"query": "get trending tokens on gmgn", "expected_action": "GMGNTrendTokenAnalysis--39--gmgntrend", "position": 1}
+{"query": "transfer tokens on base blockchain", "expected_action": "Base--13--transfer", "position": 1}
+{"query": "create a new spl token on sonic", "expected_action": "Sonic--43--createSplToken", "position": 1}
+{"query": "redeem tokens from compound", "expected_action": "CompoundV2--27--redeem", "position": 1}
+{"query": "repay borrowed tokens on compound", "expected_action": "CompoundV2--27--repayBorrow", "position": 1}
+{"query": "extract text from a webpage", "expected_action": "WebBrowser--10--fetchWebPageTextContent", "position": 1}
+{"query": "find token address on multiple chains", "expected_action": "Coingecko--3--getTokenAddressBySymbol", "position": 1}
+{"query": "generate a random number", "expected_action": "Bruce's Lab--2--random_number", "position": 1}
+{"query": "roll a dice to win", "expected_action": "Bruce's Lab--2--roll_dice", "position": 1}
+{"query": "transfer bnb tokens", "expected_action": "BNB--58--transfer", "position": 1}
+{"query": "launch a new token on pump.fun", "expected_action": "PumpFun--6--launchToken", "position": 1}
+{"query": "create a new token on solana", "expected_action": "Solana--7--createSplToken", "position": 1}
+{"query": "bridge usdc from ethereum to solana", "expected_action": "WormholeBridge--40--bridge", "position": 1}
+{"query": "search for information about recent market crash", "expected_action": "SerpAPI--21--webSearch", "position": null}
+{"query": "get user tweets from twitter", "expected_action": "Twitter--68--getUserTimeline", "position": 1}
+{"query": "transfer eth to another address", "expected_action": "Ethereum--59--transfer", "position": 1}
+{"query": "check if my domain is available", "expected_action": "Domain--9--checkDomainAvailability", "position": 1}
+{"query": "transfer sol tokens to another address", "expected_action": "Solana--7--transfer", "position": 2}
+{"query": "search for news about Solana", "expected_action": "SerpAPI--21--newsSearch", "position": 17}
+{"query": "find defi yield opportunities", "expected_action": "DefiLlama--8--getDefiPools", "position": 2}
+{"query": "analyze this ethereum token for security", "expected_action": "GoPlusSecurity--23--tokenSecurity", "position": 4}
+{"query": "find nearby hotels for vacation", "expected_action": "SerpAPI--21--hotelSearch", "position": 1}
+{"query": "check finance data for apple stock", "expected_action": "SerpAPI--21--financeSearch", "position": 1}
+{"query": "search flights for my upcoming trip", "expected_action": "SerpAPI--21--flightSearch", "position": 1}
+{"query": "check my investment portfolio on okx", "expected_action": "OKXDeFi--28--getTokenAndDefiAssets", "position": 7}
+{"query": "web search about climate change impact", "expected_action": "TavilyWebSearch--12--webSearch", "position": 1}
+{"query": "look up whois information for this domain", "expected_action": "Domain--9--getDomainWhoisInfo", "position": 1}
