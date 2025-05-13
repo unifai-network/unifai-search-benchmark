@@ -163,6 +163,8 @@ class SearchServiceAnalyzer:
                 position_counts[pos] = position_counts.get(pos, 0) + 1
         
         results["position_counts"] = position_counts
+
+        
         
         # Calculate not found count
         not_found_count = sum(1 for pos in positions if pos is None)
@@ -177,16 +179,29 @@ class SearchServiceAnalyzer:
         """
         Plot the recall@k results and position histogram in a single figure
         """
-        plt.figure(figsize=(12, 10))
+        plt.figure(figsize=(15, 6))
+
+        plt.rcParams.update({
+            'font.size': 14,
+            'axes.titlesize': 20,
+            'axes.labelsize': 18,
+            'xtick.labelsize': 20,
+            'ytick.labelsize': 20,
+            'legend.fontsize': 14,
+            'figure.titlesize': 22
+        })
         
         # Plot recall@k
-        plt.subplot(2, 1, 1)
+        plt.subplot(1, 2, 1)
         plt.plot(results["k_values"], results["recall_values"], marker='o', linestyle='-', linewidth=2)
-        plt.title('Recall@k for search_service Results', fontsize=14)
-        plt.xlabel('k (Top k results)', fontsize=12)
-        plt.ylabel('Recall@k', fontsize=12)
+        plt.title('Recall@k for search_service Results', fontsize=20)
+        plt.xlabel('k (Top k results)', fontsize=18)
+        plt.ylabel('Recall@k', fontsize=18)
         plt.grid(True, linestyle='--', alpha=0.7)
-        plt.xticks(results["k_values"])
+        
+        # Create custom x-ticks: show all values up to 10, then only even numbers
+        custom_xticks = [k for k in results["k_values"] if k <= 10 or k % 2 == 0]
+        plt.xticks(custom_xticks)
         
         # Add annotations for key points
         for i, k in enumerate(results["k_values"]):
@@ -200,23 +215,28 @@ class SearchServiceAnalyzer:
         if 10 in results["k_values"]:
             k10_index = results["k_values"].index(10)
             k10_recall = results["recall_values"][k10_index]
-            plt.annotate("default search limit",
+            plt.annotate("Default Search Limit",
                       xy=(10, k10_recall),
                       xytext=(10, k10_recall - 0.1),
                       arrowprops=dict(facecolor='red', shrink=0.05, width=1.5, headwidth=8, edgecolor='red'),
                       ha='center',
-                      fontsize=10,
+                      fontsize=16,
                       color='red')
 
         # Create a position histogram as second subplot
-        plt.subplot(2, 1, 2)
+        plt.subplot(1, 2, 2)
         filtered_positions = [pos for pos in positions if pos is not None]
         if filtered_positions:
             plt.hist(filtered_positions, bins=range(1, max(filtered_positions) + 2), alpha=0.7, edgecolor='black')
-            plt.title('Distribution of Expected Action Positions in Search Results', fontsize=14)
-            plt.xlabel('Position', fontsize=12)
-            plt.ylabel('Frequency', fontsize=12)
-            plt.xticks(range(1, max(filtered_positions) + 1))
+            plt.title('Distribution of Expected Action Positions', fontsize=20)
+            plt.xlabel('Position', fontsize=18)
+            plt.ylabel('Frequency', fontsize=18)
+            
+            # Create custom x-ticks for the histogram: show all values up to 10, then only even numbers
+            max_pos = max(filtered_positions)
+            custom_pos_xticks = [pos for pos in range(1, max_pos + 1) if pos <= 10 or pos % 2 == 0]
+            plt.xticks(custom_pos_xticks)
+            
             plt.grid(True, linestyle='--', alpha=0.7, axis='y')
         
         plt.tight_layout()
